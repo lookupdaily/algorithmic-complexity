@@ -5,4 +5,4 @@ A timing framework and custom algorithms to experiment with algorithmic complexi
 ## Technologies
 
 - Node.js
-- 
+- Jest
