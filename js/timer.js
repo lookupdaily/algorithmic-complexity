@@ -2,29 +2,27 @@ const RandomArray = require('./RandomArray')
 
 module.exports = class Timer {
   constructor(fnc, arraySize, nbOfTimes = 1) {
-    this.fnc = fnc
     this.arraySize = arraySize
-    this.times = this.runTimerLoop(nbOfTimes)
+    this.times = this.runTimerLoop(fnc, nbOfTimes)
   }
 
-  runTimerLoop(nbOfTimes) {
-    this.runWithoutTimer(new RandomArray(this.arraySize))
+  runTimerLoop(fnc, nbOfTimes) {
+    this.runWithoutTimer(fnc, new RandomArray(this.arraySize))
     let times = []
     for(let i = 0; i < nbOfTimes; i++) {
-      times.push(this.calculateTime(new RandomArray(this.arraySize))) 
+      times.push(this.calculateTime(fnc, new RandomArray(this.arraySize))) 
     }
     return times
   }
 
-  calculateTime(inputArray) {
+  calculateTime(fnc, inputArray) {
     const { performance } = require('perf_hooks');
     const startTime = performance.now()
-    this.fnc.apply(inputArray) 
+    fnc.apply(inputArray) 
     return performance.now() - startTime
   }
 
-  runWithoutTimer(inputArray, nbOfTimes = 10) {
-    const fnc = this.fnc
+  runWithoutTimer(fnc, inputArray, nbOfTimes = 10) {
     for(let i=0; i < nbOfTimes; i++) {
       fnc.apply(inputArray)
     }

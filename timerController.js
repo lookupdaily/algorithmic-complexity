@@ -1,25 +1,16 @@
-function runTimer(fnc, increment = 10000, finalSize = 200000, noOfRuns = 50) {
-  const Timer = require('./js/timer')
-  for (let arraySize = 0; arraySize <= finalSize; arraySize += increment) {
-    let timer = new Timer(fnc, arraySize, noOfRuns)
-    console.log(`Array size: ${arraySize}`)
-    // console.log('Avg value:')
-    // console.log(run.timer.average)
-    // console.log('Median value:')
-    console.log(timer.median)
-  }
-}
-
-
-function printResults(resultsArray) {
-  resultsArray.forEach((run) => {
-    console.log(`Array size: ${run.size}`)
-    console.log('Avg value:')
-    console.log(run.timer.average)
-    console.log('Median value:')
-    console.log(run.timer.median)
+function printToConsole(timer) {
+  console.log(`FUNCTION: ${timer.function}`)
+  console.log(`INCREMENT SIZE: ${timer.increment}`)
+  console.log(`RESULTS:`)
+  timer.runs.forEach((run) => {
+  console.log(`${run.arraySize}:`)
+  console.log(run.median)
   })
 }
 
+const TimerFramework = require('./js/TimerFramework')
 
-const builtInSort = runTimer(Array.prototype.sort)
+// const builtInSort = runTimer(Array.prototype.sort, 10000, 200000)
+const builtInReverse = new TimerFramework(Array.prototype.reverse, 10000, 200000)
+// const builtInReverse = runTimer(Array.prototype.reverse, 50000, 1000000)
+printToConsole(builtInReverse)
