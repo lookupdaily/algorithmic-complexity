@@ -1,0 +1,22 @@
+{
+  "name": "algorithmic-complexity",
+  "version": "1.0.0",
+  "description": "A timing framework and custom algorithms to experiment with algorithmic complexity, designing for efficiency at scale.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lookupdaily/algorithmic-complexity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lookupdaily/algorithmic-complexity/issues"
+  },
+  "homepage": "https://github.com/lookupdaily/algorithmic-complexity#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
