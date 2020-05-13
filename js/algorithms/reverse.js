@@ -1,3 +1,6 @@
 module.exports = function reverse(array) {
-  return [1]
+  if (array.length === 1) {
+    return array
+  }
+  return [array[0], array[1]] = [array[1], array[0]]
 }
