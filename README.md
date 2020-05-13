@@ -13,9 +13,9 @@ A timing framework and custom algorithms to experiment with algorithmic complexi
 
 Reverses an array in place.
 
-e.g. reverse(arr)
+code => reverse(arr)
 
-#### Example I/O table
+#### I/O table
 
 |Input      |Output     |Scenario|
 |-----------|-----------|--------|
