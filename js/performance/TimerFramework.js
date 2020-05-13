@@ -4,7 +4,7 @@ module.exports = class TimerFramework {
   constructor(fnc, increment, maxSize, noOfRuns = 50) {
     this.function = fnc
     this.incrementValue = increment
-    this.runs = this.runTimer(fnc, increment, maxSize, noOfRuns)
+    this.results = this.runTimer(fnc, increment, maxSize, noOfRuns)
   }
 
   runTimer(fnc, increment, maxSize, noOfRuns) {

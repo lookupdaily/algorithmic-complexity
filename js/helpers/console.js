@@ -1,10 +1,10 @@
 module.exports = function consoleResults(timer) {
   for (let [key, value] of Object.entries(timer)) {
-    if (key == 'runs') {
+    if (key == 'results') {
       console.log('\n')
-      value.forEach((run) => {
-        console.log(`${run.arraySize}:`)
-        console.log(run.median)
+      value.forEach((result) => {
+        console.log(`${result.arraySize}:`)
+        console.log(result.median)
         })
     } else {
       console.log(`${key}: ${value}`);
