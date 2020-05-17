@@ -22,8 +22,7 @@ code => reverse(arr)
 |[1]        |[1]        |Array of 1|
 |[1,2]      |[2,1]      |Array of 2|
 |[1,2,3]    |[3,2,1]    |Array of 3|
-|[2,1,3]    |[3,1,2]    |Array in non-numerical order|
-|[1,4,5,6,7]|[7,6,5,4,1]|Longer array|
+|[1,7,5,8,4]|[4,8,5,7,1]|Longer array in non-numerical order|
 |['hey','you','friend']|['friend','you','hey']|array of strings|
 |[1,'hey',2]|[2,'hey',1]|Array of mixed values|
 |[]         |[]         |Edge case - Empty array | 
