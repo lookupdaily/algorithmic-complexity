@@ -13,7 +13,7 @@ module.exports = class Timer {
     for(let i = 0; i < nbOfRuns; i++) {
       times.push(this.calculatePerformance(fnc, new RandomArray(this.arraySize))) 
     }
-    console.log(`array size ${this.arraySize}-${times[0]}`)
+    // console.log(`array size ${this.arraySize}-${times[0]}`)
     return times
   }
 
