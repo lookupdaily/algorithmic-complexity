@@ -7,6 +7,7 @@ module.exports = function writeToCSV(timer, filename) {
 
 function formatToColumns(timer) {
   let data = []
+  let counter = 0
   timer.results.forEach((result) => {
     data.push({
       arraySize: result.arraySize,

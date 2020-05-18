@@ -1,4 +1,4 @@
-const reverse = require('../js/algorithms/reverse/reversePushandPop')
+const reverse = require('../js/algorithms/reverse')
 
 describe('reverse',() => {
   it('returns the same for an array of 1', () => {
