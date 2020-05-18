@@ -1,4 +1,5 @@
 const RandomArray = require('../helpers/RandomArray')
+const { performance } = require('perf_hooks');
 
 module.exports = class Timer {
   constructor(fnc, arraySize, nbOfRuns = 1) {
@@ -12,19 +13,20 @@ module.exports = class Timer {
     for(let i = 0; i < nbOfRuns; i++) {
       times.push(this.calculatePerformance(fnc, new RandomArray(this.arraySize))) 
     }
+    console.log(`array size ${this.arraySize}-${times[0]}`)
     return times
   }
 
   calculatePerformance(fnc, inputArray) {
-    const { performance } = require('perf_hooks');
     const startTime = performance.now()
-    fnc.apply(inputArray) 
-    return performance.now() - startTime
+    fnc(inputArray) 
+    const endTime = performance.now()
+    return endTime  - startTime
   }
 
   runWithoutTimer(fnc, inputArray, nbOfRuns = 10) {
     for(let i=0; i < nbOfRuns; i++) {
-      fnc.apply(inputArray)
+      fnc(inputArray)
     }
   }
 
