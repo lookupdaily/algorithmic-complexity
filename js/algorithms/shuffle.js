@@ -1,11 +1,12 @@
 module.exports = function shuffle(input) {
-  let inputLength = input.length
   let output = []
 
-  for(let i = 0; i < inputLength; i++) {
+  while(input.length > 0) {
     let random = Math.floor(Math.random() * input.length)
-    let value = input.splice(random,1)
-    output.push(value[0])
+    let item = input[random]
+    input[random] = input[input.length - 1]
+    input[input.length - 1] = item
+    output.push(input.pop())
   }
   return output
 }
