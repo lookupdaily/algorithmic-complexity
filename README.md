@@ -50,12 +50,12 @@ Given a list of words, find all words that appear more than once.
 Input: array
 Output: array
 
-|Input        |Output |Scenario|
-|-------------|-------|--------|
-|['hey']      |[]     |Array of 1|
-|['hey','hey']|['hey']|Array of 2 with one duplicate|
-|['hey''you','hey']|['hey']|Array with 1 duplicate and 2 non-duplicates|
-|['hey','you']|[]     |Array of 2 with no duplicates|
-|['hey','you','you','hey']|['hey','you']|Array with 2 duplicates|
-|['hey','you','you','you','hey','there']|['hey','you']  |Array with multiple duplicates and one non-duplicate|
-|[]           |[]     |Edge case - Empty array |
+|st|Input        |Output |Scenario|
+|-|-------------|-------|--------|
+|-|['hey']      |[]     |Array of 1|
+|-|['hey','hey']|['hey']|Array of 2 with one duplicate|
+|-|['hey''you','hey']|['hey']|Array with 2 non-consecutive|
+||['hey','you']|[]     |Array of 2 with no duplicates|
+||['hey','you','you','you']|['you']|Array with 3 duplicates|
+||['hey','you','you','you','hey','there']|['hey','you']  |Array with multiple duplicates and one non-duplicate|
+||[]           |[]     |Edge case - Empty array |

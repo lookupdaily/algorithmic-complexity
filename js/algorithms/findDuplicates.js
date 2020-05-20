@@ -3,11 +3,10 @@
     let duplicates = []
 
     arr.forEach((value) => {
-      if(existing.includes(value)) {
+      if(existing.includes(value) && !duplicates.includes(value)) {
         duplicates.push(value)
       }
       existing.push(value)
     })
-
     return duplicates
   }
