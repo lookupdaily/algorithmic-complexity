@@ -55,7 +55,7 @@ Output: array
 |-|['hey']      |[]     |Array of 1|
 |-|['hey','hey']|['hey']|Array of 2 with one duplicate|
 |-|['hey''you','hey']|['hey']|Array with 2 non-consecutive|
-||['hey','you']|[]     |Array of 2 with no duplicates|
-||['hey','you','you','you']|['you']|Array with 3 duplicates|
-||['hey','you','you','you','hey','there']|['hey','you']  |Array with multiple duplicates and one non-duplicate|
+|-+|['hey','you']|[]     |Array of 2 with no duplicates (already passes)|
+|-|['hey','you','you','you']|['you']|Array with 3 duplicates|
+||['hey','you','you','you','hey','there']|['hey','you']  |Array with multiple duplicates and one non-duplicate (should pass)|
 ||[]           |[]     |Edge case - Empty array |
