@@ -13,7 +13,7 @@ A timing framework and custom algorithms to experiment with algorithmic complexi
 
 Reverses an array in place.
 
-code => reverse(arr)
+code => findDuplicates(arr)
 
 #### I/O table
 
@@ -43,5 +43,19 @@ code => shuffle(arr)
 |[1,'hey',2]|![1,'hey',2]|Array of mixed values|
 |[]         |[]         |Edge case - Empty array | 
 
+### Find Duplicates
 
+Given a list of words, find all words that appear more than once.
 
+Input: array
+Output: array
+
+|Input        |Output |Scenario|
+|-------------|-------|--------|
+|[1]          |[]     |Array of 1|
+|[1,1]        |[1]    |Array of 2 with one duplicate|
+|[1,2]        |[]     |Array of 2 with no duplicates|
+|[1,2,1]      |[2]    |Array with 1 duplicate and 2 non-duplicates|
+|[1,2,2,1]    |[1,2]  |Array with 2 duplicates|
+|[1,2,2,2,1,4]|[1,2]  |Array with multiple duplicates and one non-duplicate|
+|[]           |[]     |Edge case - Empty array |

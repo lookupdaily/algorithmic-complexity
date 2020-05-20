@@ -1,4 +1,4 @@
-const shuffle = require('../js/algorithms/shuffle')
+const shuffle = require('../../js/algorithms/shuffle')
 
 describe('shuffle', () => {
   let shuffled
@@ -31,10 +31,6 @@ describe('shuffle', () => {
 
     it('includes the same values', () => {
       expect(shuffled).toEqual(expect.arrayContaining([1,2,3]))
-    })
-
-    it('does not exactly match original array', () => {
-      expect(shuffled).not.toEqual([1,2,3])
     })
   })
 

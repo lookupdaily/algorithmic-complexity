@@ -1,11 +1,11 @@
-module.exports = function reverse(input) {
+module.exports = function reverse(arr) {
   let i = 0
-  while(i < input.length / 2) {
-    let item = input[i]
-    input[i] = input[input.length - (i+1)]
-    input[input.length - (i+1)] = item
+  while(i < arr.length / 2) {
+    let item = arr[i]
+    arr[i] = arr[arr.length - (i+1)]
+    arr[arr.length - (i+1)] = item
     i++
   }
-  return input
+  return arr
 }
 
