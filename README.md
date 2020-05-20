@@ -54,8 +54,8 @@ Output: array
 |-------------|-------|--------|
 |[1]          |[]     |Array of 1|
 |[1,1]        |[1]    |Array of 2 with one duplicate|
-|[1,2]        |[]     |Array of 2 with no duplicates|
 |[1,2,1]      |[2]    |Array with 1 duplicate and 2 non-duplicates|
+|[1,2]        |[]     |Array of 2 with no duplicates|
 |[1,2,2,1]    |[1,2]  |Array with 2 duplicates|
 |[1,2,2,2,1,4]|[1,2]  |Array with multiple duplicates and one non-duplicate|
 |[]           |[]     |Edge case - Empty array |
