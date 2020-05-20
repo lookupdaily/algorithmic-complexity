@@ -52,10 +52,10 @@ Output: array
 
 |Input        |Output |Scenario|
 |-------------|-------|--------|
-|[1]          |[]     |Array of 1|
-|[1,1]        |[1]    |Array of 2 with one duplicate|
-|[1,2,1]      |[2]    |Array with 1 duplicate and 2 non-duplicates|
-|[1,2]        |[]     |Array of 2 with no duplicates|
-|[1,2,2,1]    |[1,2]  |Array with 2 duplicates|
-|[1,2,2,2,1,4]|[1,2]  |Array with multiple duplicates and one non-duplicate|
+|['hey']      |[]     |Array of 1|
+|['hey','hey']|['hey']|Array of 2 with one duplicate|
+|['hey''you','hey']|['hey']|Array with 1 duplicate and 2 non-duplicates|
+|['hey','you']|[]     |Array of 2 with no duplicates|
+|['hey','you','you','hey']|['hey','you']|Array with 2 duplicates|
+|['hey','you','you','you','hey','there']|['hey','you']  |Array with multiple duplicates and one non-duplicate|
 |[]           |[]     |Edge case - Empty array |

@@ -1,15 +1,15 @@
 findDuplicates = require('../../js/algorithms/findDuplicates')
 
 describe('findDuplicates', () => {
-  it('returns an empty array with no duplicates', () => {
-    expect(findDuplicates([1])).toEqual([])
+  it('returns an empty array when no duplicates', () => {
+    expect(findDuplicates(['hey'])).toEqual([])
   })
 
-  it('returns [1] when passed [1,1]', () => {
-    expect(findDuplicates([1,1])).toEqual([1])
+  it('returns array of one when passed array of two duplicates', () => {
+    expect(findDuplicates(['hey','hey'])).toEqual(['hey'])
   })
 
-  it('returns [1] when passed [1,2,1]', () => {
-    expect(findDuplicates([1,2,1])).toEqual([1])
+  it('returns array of one when passed two non-consecutive duplicates', () => {
+    expect(findDuplicates(['hey','you','hey'])).toEqual(['hey'])
   })
 })
