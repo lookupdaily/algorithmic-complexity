@@ -20,4 +20,10 @@ describe('findDuplicates', () => {
   it('returns multiple duplicates', () => {
     expect(findDuplicates(['hey','you','you','you','hey','there'])).toEqual(expect.arrayContaining(['hey','you']))
   })
+
+  describe('edge cases', () => {
+    it('returns empty array when passed no values', () => {
+      expect(findDuplicates([])).toEqual([])
+    })
+  })
 })
