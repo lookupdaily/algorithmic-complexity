@@ -8,6 +8,6 @@ const writeToCSV = require('./js/helpers/csv')
 const findDuplicates = require('./js/algorithms/findDuplicates')
 // const builtInReverse = arr => { arr.reverse() }
 
-const performanceCheck = new TimerFramework(findDuplicates, 50000, 1000000, 50)
+const performanceCheck = new TimerFramework(findDuplicates, 10000, 200000, 50)
 consoleResults(performanceCheck)
-writeToCSV(performanceCheck, 'findDuplicates1')
+writeToCSV(performanceCheck, 'findDuplicates2')
