@@ -1,13 +1,14 @@
-const fs = require('fs');
+// const fs = require('fs');
 
-// Returns the path to the word list which is separated by `\n`
-const wordListPath = require('word-list');
+// // Returns the path to the word list which is separated by `\n`
+// const wordListPath = require('word-list');
+const wordArray = require('./word-list')
 
 module.exports = class RandomArray {
-  constructor(requiredLength, dataType = 'integer') {
+  constructor(requiredLength, dataType) {
     this.dataType = dataType.toLowerCase()
     this.requiredLength = requiredLength
-    this.inputArray = this.generateArray()
+    return this.generateArray()
   }
   
   get array() {
@@ -37,7 +38,7 @@ module.exports = class RandomArray {
   }
 
   stringArray() {
-    const possibleWords = fs.readFileSync(wordListPath, 'utf8').split('\n')
+    const possibleWords = wordArray()
     return possibleWords[Math.floor(Math.random() * possibleWords.length)]
   }
 }
