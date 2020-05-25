@@ -18,5 +18,9 @@
   "homepage": "https://github.com/lookupdaily/algorithmic-complexity#readme",
   "devDependencies": {
     "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "lorem-ipsum": "^2.0.3",
+    "word-list": "^3.1.0"
   }
 }

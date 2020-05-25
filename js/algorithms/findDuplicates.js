@@ -1,5 +1,5 @@
   module.exports = function findDuplicates(arr) {
-    let object = {}
+    let object = []
     let duplicates = []
 
     // create an object with a count for each time a value appears
