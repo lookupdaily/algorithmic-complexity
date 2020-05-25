@@ -2,11 +2,12 @@ const TimerFramework = require('./js/performance/TimerFramework')
 const consoleResults = require('./js/helpers/console')
 const writeToCSV = require('./js/helpers/csv')
 
-const myReverse = require('./js/algorithms/reverse')
-const alicesReverse = require('./js/algorithms/working/alicesReverse')
-const myShuffle = require('./js/algorithms/shuffle')
-const builtInReverse = arr => { arr.reverse() }
+// const myReverse = require('./js/algorithms/reverse')
+// const alicesReverse = require('./js/algorithms/working/alicesReverse')
+// const myShuffle = require('./js/algorithms/shuffle')
+const findDuplicates = require('./js/algorithms/findDuplicates')
+// const builtInReverse = arr => { arr.reverse() }
 
-const performanceCheck = new TimerFramework(alicesReverse, 10000, 100000, 20)
+const performanceCheck = new TimerFramework(findDuplicates, 50000, 1000000, 50)
 consoleResults(performanceCheck)
-writeToCSV(performanceCheck, 'myShuffle3')
+writeToCSV(performanceCheck, 'findDuplicates1')
