@@ -38,6 +38,20 @@ node index.js
 4. Add csv filename on ln 14 if desired - default: 'results'
 5. Run `node index.js` in the terminal
 
+**Example code**
+
+```
+//index.js
+const TimerFramework = require('./js/performance/TimerFramework')
+const consoleResults = require('./js/helpers/console')
+const writeToCSV = require('./js/helpers/csv')
+
+const findDuplicates = require('./js/algorithms/findDuplicates')
+
+const performanceCheck = new TimerFramework(findDuplicates, 10000, 100000, 10, 'string')
+consoleResults(performanceCheck)
+writeToCSV(performanceCheck, 'findDuplicates')
+```
 
 ## Algorithms
 
