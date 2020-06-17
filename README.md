@@ -74,8 +74,11 @@ code => shuffle(arr)
 Given a list of words, find all words that appear more than once.
 code => findDuplicates(arr)
 
-Working models of each of the above in '/js/algorithms/working' to enable me to log improvements in efficiency.
-
-## Sort
+### Sort
 
 In progress
+
+--
+
+Working models of each of the above in '/js/algorithms/working' to enable me to log improvements in efficiency.
+
