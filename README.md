@@ -18,7 +18,7 @@ A timing framework and custom algorithms to experiment with algorithmic complexi
 
 This project consists of a timing framework to time custom algorithms I have written to understand algorithmic complexity.
 
-A timing framework runs a timer on an algorithm with the following options: 
+The timing framework runs a timer on a specified algorithm with the following options: 
 - start/increment size: e.g. array size will start at 5000 and increase by 5000
 - max size:final array size
 - nb of timer runs for each array size: default 50, reduce value for more complex algorithms
